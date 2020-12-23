@@ -2,10 +2,10 @@
 # Сообщить к какому времени года относится месяц (зима, весна, лето, осень).
 # Напишите решения через list и через dict.
 
-seasons = {"Зима": (1, 2, 12),
-           "Весна": (3, 4, 5),
-           "Лето": (6, 7, 8),
-           "Осень": (9, 10, 11)}
+seasons = {"зима": (1, 2, 12),
+           "весна": (3, 4, 5),
+           "лето": (6, 7, 8),
+           "осень": (9, 10, 11)}
 result_season = None
 month = int(input("Введите номер месяца: "))
 for key in seasons.keys():
@@ -14,4 +14,4 @@ for key in seasons.keys():
 if result_season is None:
     print("Такого месяца не существует!")
 else:
-    print(result_season)
+    print(f'Сезон: {result_season}.')
