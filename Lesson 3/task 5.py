@@ -10,13 +10,15 @@ def my_fan():
     total = 0
 
     while True:
-        user_num = input("Ведите несколько чисел через пробел для прекращения работы программы, нажмите 'z': \n").split()
+        user_num = input(
+            "Ведите несколько чисел через пробел для прекращения работы программы, нажмите 'z': \n").split()
         for dig in user_num:
             if dig.isdigit():
                 total += int(dig)
             elif dig == 'z':
-                print(total)
+                print(f'Сумма всех введенных чисел: {total}')
                 exit(0)
-        print(total)
+        print(f'Сумма всех введенных чисел: {total}')
+
 
 if __name__ == '__main__': my_fan()
