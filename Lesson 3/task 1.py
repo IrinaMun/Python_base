@@ -18,4 +18,3 @@ def my_fun(n_1, n_2):
 
 
 my_fun(float(input("Введите первое число: ")), float(input("Введите второе число: ")))
-""
