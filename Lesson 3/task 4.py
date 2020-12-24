@@ -3,4 +3,4 @@ def my_func(x, y):
     print(f'{z}')
 
 
-my_func(35, 67)
+my_func(4, 8)
